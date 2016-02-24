@@ -1,5 +1,5 @@
 export h = require "human"
 
-joe = Human!
-joe\naming!
-joe\greet!
+b = h.Human!
+b\naming!
+b\greet!
