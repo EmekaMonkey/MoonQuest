@@ -17,4 +17,13 @@ export class Inventory
       elseif i == @max_slots
         io.write "Ok last one: "
       @x = io.read!
-      table.insert @slots, i,  @x
+      if @x == ""
+        table.insert @slots, i,  "empty"
+      else
+        table.insert @slots, i,  @x    
+    io.write "Inventory:\n"
+    for k, v in pairs @slots
+      if k != @max_slots
+        print v .. ","
+      elseif k == @max_slots
+        print v
