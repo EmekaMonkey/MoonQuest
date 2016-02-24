@@ -1,4 +1,5 @@
-class Human
+module "human", package.seeall
+export class Human
   new: =>
     @name = {}
   naming: =>
