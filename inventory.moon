@@ -21,7 +21,7 @@ export class Inventory
         table.insert @slots, i,  "empty"
       else
         table.insert @slots, i,  @x    
-    io.write "Inventory:\n"
+    io.write "\nInventory:\n"
     for k, v in pairs @slots
       if k != @max_slots
         print v .. ","
