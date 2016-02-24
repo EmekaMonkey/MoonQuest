@@ -1,9 +1,10 @@
 export h = require "human"
 export i = require "inventory"
+export w = require "weapon"
 
-b = h.Human!
+h = h.Human!
 i = i.Inventory!
 
-b\naming!
-b\greet!
+h\naming!
+h\greet!
 i\fill_inventory!
