@@ -7,3 +7,4 @@ export class Inventory
     math.random 10, 15
     math.random 10, 15
     @max_slots = math.random 10, 15
+    @slots = {}
