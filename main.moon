@@ -6,5 +6,4 @@ i = i.Inventory!
 
 b\naming!
 b\greet!
-i\init!
 i\fill_inventory!
