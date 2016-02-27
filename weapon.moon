@@ -1,19 +1,30 @@
 module "weapons", package.seeall
 
-export class Melee
-  new: =>
-    math.randomseed(os.time())
-    @attack =
-    @dps =
+
+math.randomseed(os.time())
+math.random 5, 10
+math.random 5, 10
+math.random 5, 10
+math.random 5, 10
+math.random 5, 10
+
+export class Weapon
+   new: =>
+    @attack = math.random 5, 10
+    @dps = math.random 5, 10
   
-export class Ranged
-  new: =>
-    math.randomseed(os.time())
-    @attack =
-    @dps =
+export class Melee extends Weapon
+    @attack = math.random 5, 10
+    @dps = math.random 5, 10
   
-export class Magic
-  new: =>
-    math.randomseed(os.time())
-    @attack =
-    @dps =
+export class Ranged extends Weapon
+    @attack = math.random 5, 10
+    @dps = math.random 5, 10
+  
+export class Magic extends Weapon
+    @attack = math.random 5, 10
+    @dps = math.random 5, 10
+
+-- m = Magic!
+-- print m.dps
+
