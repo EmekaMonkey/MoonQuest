@@ -1,0 +1,8 @@
+h = require("human")
+i = require("inventory")
+w = require("weapon")
+h = h.Human()
+i = i.Inventory()
+h:naming()
+h:greet()
+return i:fill_inventory()
