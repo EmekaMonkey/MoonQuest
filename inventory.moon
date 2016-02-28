@@ -24,16 +24,24 @@ export class Inventory
         else
           table.insert @slots, i,  @x
       else
+<<<<<<< HEAD
         break
+=======
+        table.insert @slots, i,  @x
+>>>>>>> origin/master
     io.write "\nInventory:\n"
     for k, v in pairs @slots
       if k != @max_slots
         print v .. ","
       elseif k == @max_slots
         print v
+<<<<<<< HEAD
     @save\write "Inventory:\n"
     for k, v in pairs @slots
       if k != @max_slots
         @save\write v .. ",\n"
       elseif k == @max_slots
         @save\write v
+=======
+      
+>>>>>>> origin/master

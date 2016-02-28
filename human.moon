@@ -3,8 +3,6 @@ export i = require "inventory"
 
 HUMAN_INVENTORY = i.Inventory!
 
-
-
 export class Human
   new: =>
     @name = {}
