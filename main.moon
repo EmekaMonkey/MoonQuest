@@ -1,10 +1,15 @@
-export h = require "human"
-export i = require "inventory"
-export w = require "weapon"
+#!/usr/local/bin/moon main.moon
 
-h = h.Human!
-i = i.Inventory!
+export mpr = require "human"
+export mpi = require "inventory"
+export mpw = require "weapon"
 
-h\naming!
-h\greet!
-i\fill_inventory!
+mpr = mpr.Human!
+mpi = mpi.Inventory!
+
+with mpr
+  \naming!
+  \greet!
+
+with mpi
+  \fill_inventory!
